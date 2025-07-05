@@ -2,3 +2,26 @@
 __pycache__/
 data/raw/
 *.pyc
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/raw/
+data/filtered_complaints.csv
+vector_store/
+
+# VS Code
+.vscode/
+
+# Logs and OS files
+*.log
+.DS_Store
