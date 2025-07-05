@@ -1,0 +1,21 @@
+{
+    // Point VS Code at your virtual environment’s Python interpreter
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+    // Use Black for auto-formatting, and format on save
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    // Exclude virtual env, caches, and raw data from the file explorer
+    "files.exclude": {
+        ".venv": true,
+        "__pycache__": true,
+        "data/raw": true
+    },
+    // When opening notebooks, set the working directory to the repo root
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    // Ensure code cells run from the project root
+    "jupyter.runStartupCommands": [
+        "import os; os.chdir('${workspaceFolder}')"
+    ],
+    // Keep the interactive window in single-document view
+    "jupyter.interactiveWindowMode": "single"
+}
