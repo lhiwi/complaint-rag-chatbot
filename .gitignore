@@ -25,3 +25,6 @@ vector_store/
 # Logs and OS files
 *.log
 .DS_Store
+# binary index
+vector_store/faiss_index.bin
+!vector_store/metadata.json
